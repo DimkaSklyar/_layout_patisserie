@@ -17,7 +17,8 @@ a
 		text-decoration: none
 	&:active
 		color: $color-light
-
+.outset-2
+	margin-left: -16%
 .btn
 	display: inline-block
 	text-transform: uppercase
@@ -208,8 +209,91 @@ section
 		font-size: 1.5em
 		font-weight: bold
 
+.service
+	position: relative
+	.decor
+		&::before, &::after
+			position: absolute
+			content: ''
+			background: url('../img/decor-1.png') no-repeat
+			height: 390px
+			width: 100px
+			background-size: cover
+		&::before
+			left: -12%
+			bottom: -60px
+			transform: rotate(180deg)
+		&::after
+			right: -12%
+			top: -60px
+	.section-name
+		margin-bottom: 50px
+	.feature
+		text-align: center
+		&-item
+			&:hover figure
+				border-color: $color-light
+			figure
+				width: 180px
+				height: 180px
+				border-radius: 50%
+				border: 3px solid $color-darken
+				margin: 0 auto
+		h3
+			text-transform: uppercase
+			color: $color-darken
+			font-size: 1.1em
+			margin-top: 20px
+			padding-bottom: 10px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 100px
+				height: 2px
+				background: $color-light
+				bottom: 0
+				left: 50%
+				transform: translate(-50%)
+		p
+			font-size: .9em
 
 
+.slogan
+	height: 500px
+	background: url('../img/slogan.jpg') no-repeat 50% 50%
+	background-size: cover
+	position: relative
+	padding: 80px
+	&::before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(#fff,.6)
+	&::after
+		position: absolute
+		content: ''
+		background: url('../img/bread-decor.png') no-repeat
+		width: 770px
+		height: 100%
+		left: 50%
+		transform: translateX(-50%)
+		bottom: -55%
+	&-disc
+		text-align: center
+		p
+			font-size: 2.5em
+			text-transform: uppercase
+			line-height: 1.1
+			color: $color-darken
+			font-weight: bold
+			letter-spacing: 1px
+			& + p
+				font-size: 1.2em
+				text-transform: none
 /*==========  user style  ==========*/
 
 /*==========  custom plugin ==========*/

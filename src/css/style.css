@@ -6487,6 +6487,10 @@ a:active {
   color: #ffb70f;
 }
 
+.outset-2 {
+  margin-left: -16%;
+}
+
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -6759,6 +6763,121 @@ section .best-product .product-about .product-price {
 .comment blockquote {
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.service {
+  position: relative;
+}
+
+.service .decor::before, .service .decor::after {
+  position: absolute;
+  content: '';
+  background: url("../img/decor-1.png") no-repeat;
+  height: 390px;
+  width: 100px;
+  background-size: cover;
+}
+
+.service .decor::before {
+  left: -12%;
+  bottom: -60px;
+  transform: rotate(180deg);
+}
+
+.service .decor::after {
+  right: -12%;
+  top: -60px;
+}
+
+.service .section-name {
+  margin-bottom: 50px;
+}
+
+.service .feature {
+  text-align: center;
+}
+
+.service .feature-item:hover figure {
+  border-color: #ffb70f;
+}
+
+.service .feature-item figure {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #724e3f;
+  margin: 0 auto;
+}
+
+.service .feature h3 {
+  text-transform: uppercase;
+  color: #724e3f;
+  font-size: 1.1em;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.service .feature h3::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #ffb70f;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.service .feature p {
+  font-size: .9em;
+}
+
+.slogan {
+  height: 500px;
+  background: url("../img/slogan.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  padding: 80px;
+}
+
+.slogan::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slogan::after {
+  position: absolute;
+  content: '';
+  background: url("../img/bread-decor.png") no-repeat;
+  width: 770px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -55%;
+}
+
+.slogan-disc {
+  text-align: center;
+}
+
+.slogan-disc p {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #724e3f;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.slogan-disc p + p {
+  font-size: 1.2em;
+  text-transform: none;
 }
 
 /*==========  user style  ==========*/
