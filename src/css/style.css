@@ -273,7 +273,7 @@ html {
 
 html {
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -2868,7 +2868,7 @@ html {
   bottom: 0px;
   left: 0px;
   display: none;
-  background: linear-gradient(transparent, black);
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
   width: 100%;
 }
 
@@ -6886,17 +6886,15 @@ section .best-product .product-about .product-price {
   padding-top: 170px;
 }
 
-.top-week .radio-product {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.top-week .product-list {
+  overflow: hidden;
 }
 
-.top-week input[type=radio] {
-  display: none;
+.top-week .product:not(:last-of-type) {
+  margin-bottom: 50px;
 }
 
-.top-week-product figure {
+.top-week .product figure {
   overflow: hidden;
   width: 170px;
   height: 170px;
@@ -6907,8 +6905,70 @@ section .best-product .product-about .product-price {
   align-content: center;
 }
 
-.top-week-product figure img {
+.top-week .product figure img {
   height: 100%;
+}
+
+.top-week .product-week {
+  height: 600px;
+  overflow: hidden;
+  border: 2px solid #ffb70f;
+  padding: 10px;
+  position: relative;
+  opacity: 0;
+}
+
+.top-week .product-week-disc {
+  padding: 20px 25px;
+}
+
+.top-week .product-week-disc .product-name {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.top-week .product-week-disc .product-disc {
+  color: #777777;
+  font-size: 1em;
+}
+
+.top-week .product-week-disc .product-ing {
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.top-week .product-week-disc ol {
+  display: inline-block;
+  margin: 0;
+  padding-left: 15px;
+  color: #777777;
+}
+
+.top-week .product-week-disc ol:last-of-type {
+  margin-left: 150px;
+}
+
+.top-week .product-week-disc ol li {
+  margin-bottom: 10px;
+}
+
+.top-week .product-week-disc .price {
+  position: absolute;
+  bottom: 30px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.top-week .product-week-img figure {
+  overflow: hidden;
+  height: 575px;
+}
+
+.top-week .product-active {
+  opacity: 1;
 }
 
 /*==========  user style  ==========*/

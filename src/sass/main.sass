@@ -300,13 +300,11 @@ section
 
 .top-week
 	padding-top: 170px
-	.radio-product
-		list-style: none
-		margin: 0
-		padding: 0
-	input[type=radio]
-		display: none
-	&-product
+	.product-list
+		overflow: hidden
+	.product
+		&:not(:last-of-type)
+			margin-bottom: 50px
 		figure
 			overflow: hidden
 			width: 170px
@@ -318,6 +316,47 @@ section
 			align-content: center
 			img
 				height: 100%
+	.product-week
+		height: 600px
+		overflow: hidden
+		border: 2px solid $color-light
+		padding: 10px
+		position: relative
+		opacity: 0
+		&-disc
+			padding: 20px 25px
+			.product-name
+				color: #000000
+				text-transform: uppercase
+				font-size: 1.5em
+				font-weight: bold
+			.product-disc
+				color: #777777
+				font-size: 1em
+			.product-ing
+				color: #000000
+				font-size: 1.2em
+				font-weight: bold
+			ol
+				display: inline-block
+				margin: 0
+				padding-left: 15px
+				color: #777777
+				&:last-of-type
+					margin-left: 150px
+				li
+					margin-bottom: 10px
+			.price
+				position: absolute
+				bottom: 30px
+				font-size: 3em
+				font-weight: bold
+		&-img
+			figure
+				overflow: hidden
+				height: 575px
+	.product-active
+		opacity: 1
 /*==========  user style  ==========*/
 
 /*==========  custom plugin ==========*/

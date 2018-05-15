@@ -7,4 +7,8 @@ $(document).ready(function(){
 		});
 	});
 	
+	$('#product-list-1').click(function () { 
+		$('#product-1').addClass('product-active');
+	});
+
 });
