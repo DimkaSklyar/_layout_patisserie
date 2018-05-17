@@ -273,7 +273,7 @@ html {
 
 html {
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -2868,7 +2868,7 @@ html {
   bottom: 0px;
   left: 0px;
   display: none;
-  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  background: linear-gradient(transparent, black);
   width: 100%;
 }
 
@@ -9977,6 +9977,12 @@ a:active {
   color: #ffb70f;
 }
 
+h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .outset-2 {
   margin-left: -16%;
 }
@@ -10655,6 +10661,216 @@ section .best-product .product-about .product-price {
   margin-top: 20px;
   text-align: center;
   font-size: 0.9em;
+}
+
+.map {
+  background: url("../img/map.png") no-repeat;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+.map .feedback {
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(114, 78, 63, 0.9);
+  height: 600px;
+  padding: 30px 35px;
+}
+
+.map .feedback h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.map .feedback p {
+  text-align: left;
+  padding: 10px 0;
+  font-size: .9em;
+}
+
+.map .feedback form input, .map .feedback form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #777;
+  font-style: italic;
+}
+
+.map .feedback form input:focus, .map .feedback form textarea:focus {
+  outline-color: #ffb70f;
+}
+
+.map .feedback form input {
+  height: 50px;
+}
+
+.map .feedback form textarea {
+  margin-bottom: 20px;
+}
+
+.map .feedback button {
+  padding: 20px 50px;
+  cursor: pointer;
+  background-color: rgba(162, 163, 165, 0.95);
+  font-weight: bold;
+  color: #724e3f;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+.map .feedback button:hover {
+  background-color: rgba(114, 78, 63, 0.95);
+  color: #a2a3a5;
+  border-color: #ffb70f;
+}
+
+.client {
+  margin-top: 30px;
+}
+
+.client-item {
+  filter: grayscale(0.7);
+  padding: 40px;
+}
+
+.client-item:hover {
+  filter: none;
+}
+
+.client-item img {
+  width: 100%;
+}
+
+.about-us {
+  color: #ffffff;
+  background-color: #303133;
+  padding: 75px 0;
+}
+
+.about-us .wrapper {
+  padding-left: 70px;
+}
+
+.about-us .wrapper:last-child {
+  padding-left: 50px;
+}
+
+.about-us .wrapper h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-us .wrapper p {
+  font-size: .85em;
+  line-height: 1.7;
+}
+
+.about-us form {
+  display: flex;
+}
+
+.about-us form input {
+  height: 45px;
+  border: 2px solid #a2a3a5;
+  background-color: #3b3c3e;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.about-us form button {
+  border: 2px solid #a2a3a5;
+  outline: none 0;
+  height: 45px;
+  margin-left: 5px;
+  background-color: #a2a3a5;
+  color: #303133;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.about-us form button:hover {
+  background-color: #724e3f;
+  border: 2px solid #ffb70f;
+  color: #ffffff;
+}
+
+footer {
+  padding: 50px 0;
+  color: #ffffff;
+  background-color: #28292b;
+  border-bottom: 2px solid #272727;
+}
+
+footer p {
+  font-size: .9em;
+  margin-bottom: 5px;
+}
+
+footer span {
+  font-style: italic;
+}
+
+footer .fallow-social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .fallow-social li:not(:last-child) {
+  margin-right: 5px;
+}
+
+footer .fallow-social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: .1s;
+}
+
+footer .fallow-social a:hover {
+  color: #ffb70f;
+  border-color: #ffb70f;
+}
+
+footer .fallow-social a i {
+  line-height: 38px;
+}
+
+footer .contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .contacts a {
+  color: #ffffff;
+}
+
+footer .contacts a:hover {
+  color: #ffb70f;
+}
+
+.copyright {
+  background-color: #28292b;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #cccccc;
+  padding: 20px 0;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  font-size: 0.8em;
 }
 
 /*==========  user style  ==========*/

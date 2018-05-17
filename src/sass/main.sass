@@ -19,6 +19,12 @@ a
 		text-decoration: none
 	&:active
 		color: $color-light
+
+h2
+	font-size: 1.1em
+	text-transform: uppercase
+	margin-bottom: 20px
+
 .outset-2
 	margin-left: -16%
 .btn
@@ -500,6 +506,149 @@ section
 		margin-top: 20px
 		text-align: center
 		font-size: 0.9em
+
+.map
+	background: url('../img/map.png') no-repeat
+	height: 600px
+	background-size: cover
+	position: relative
+	padding: 0
+	.feedback
+		text-align: center
+		color: #ffffff
+		background-color: rgba($color-darken, .9)
+		height: 600px
+		padding: 30px 35px
+		h2
+			font-size: 1.2em
+			text-transform: uppercase
+		p
+			text-align: left
+			padding: 10px 0
+			font-size: .9em
+		form
+			input, textarea
+				width: 100%
+				margin-bottom: 15px
+				padding: 15px
+				color: #777
+				font-style: italic
+				&:focus
+					outline-color: $color-light
+			input
+				height: 50px
+			textarea
+				margin-bottom: 20px
+		button
+			padding: 20px 50px
+			cursor: pointer
+			background-color: rgba(#a2a3a5, .95)
+			font-weight: bold
+			color: $color-darken
+			letter-spacing: 1px
+			font-size: 1.1em
+			&:hover
+				background-color: rgba($color-darken, .95)
+				color: #a2a3a5
+				border-color: $color-light
+
+.client
+	margin-top: 30px
+	&-item
+		filter: grayscale(.7)
+		padding: 40px
+		&:hover
+			filter: none
+		img
+			width: 100%
+
+.about-us
+	color: #ffffff
+	background-color: #303133
+	padding: 75px 0
+	.wrapper
+		padding-left: 70px
+		&:last-child
+			padding-left: 50px
+		h2
+			font-size: 1.1em
+			text-transform: uppercase
+			margin-bottom: 20px
+		p
+			font-size: .85em
+			line-height: 1.7
+	form
+		display: flex
+		input
+			height: 45px
+			border: 2px solid #a2a3a5
+			background-color: #3b3c3e
+			padding: 10px
+			color: #ffffff
+		button
+			border: 2px solid #a2a3a5
+			outline: none 0
+			height: 45px
+			margin-left: 5px
+			background-color: #a2a3a5
+			color: #303133
+			cursor: pointer
+			letter-spacing: 1px
+			&:hover
+				background-color: $color-darken
+				border: 2px solid $color-light
+				color: #ffffff
+
+footer
+	padding: 50px 0
+	color: #ffffff
+	background-color: #28292b
+	border-bottom: 2px solid #272727
+	p
+		font-size: .9em
+		margin-bottom: 5px
+	span
+		font-style: italic
+	.fallow-social
+		display: flex
+		list-style: none
+		margin: 0
+		padding: 0
+		li:not(:last-child)
+			margin-right: 5px
+		a
+			display: block
+			width: 40px
+			height: 40px
+			text-align: center
+			color: #ffffff
+			border: 2px solid #ffffff
+			border-radius: 50%
+			font-size: 1.2em
+			transition: .1s
+			&:hover
+				color: $color-light
+				border-color: $color-light
+			i
+				line-height: 38px
+	.contacts
+		list-style: none
+		margin: 0
+		padding: 0
+		a
+			color: #ffffff
+			&:hover
+				color: $color-light
+.copyright
+	background-color: #28292b
+	display: flex
+	justify-content: center
+	align-content: center
+	color: #cccccc
+	padding: 20px 0
+	p
+		margin-bottom: 0
+		font-size: 0.8em
 /*==========  user style  ==========*/
 
 /*==========  custom plugin ==========*/
