@@ -115,6 +115,7 @@ section
 		overflow: hidden
 		&:hover .product-about
 			bottom: 0
+			visibility: visible
 			opacity: 1
 		&:hover figure
 			border: 2px solid $color-light
@@ -159,6 +160,7 @@ section
 			bottom: -150px
 			transition: all .4s
 			color: #fff
+			visibility: hidden
 			p
 				margin-bottom: 0
 			.btn-view
@@ -415,7 +417,7 @@ section
 				padding-left: 15px
 				color: #777777
 				&:last-of-type
-					margin-left: 150px
+					margin-left: 70px
 				li
 					margin-bottom: 10px
 			.price
@@ -570,6 +572,7 @@ section
 		h2
 			font-size: 1.2em
 			text-transform: uppercase
+			margin-bottom: 0
 		p
 			text-align: left
 			padding: 10px 0
@@ -590,7 +593,7 @@ section
 		button
 			padding: 20px 50px
 			cursor: pointer
-			background-color: rgba(#a2a3a5, .95)
+			background-color: rgba(#fff, .95)
 			font-weight: bold
 			color: $color-darken
 			letter-spacing: 1px
@@ -697,6 +700,43 @@ footer
 	p
 		margin-bottom: 0
 		font-size: 0.8em
+
+.modal-window
+	h1
+		text-transform: uppercase
+	p
+		font-weight: bold
+		span
+			font-weight: normal
+	input
+		width: 100%
+		height: 45px
+		margin-bottom: 20px
+		padding: 5px 10px
+		border: 2px solid $color-darken
+		transition: .3s
+		&:focus
+			outline: none 0
+			border-color: $color-light
+	#messegeResult-order
+		button
+			padding: 14px 50px
+			width: 100%
+			background-color: rgba(255, 197, 0, 0.6)
+			&:hover
+				color: #ffffff
+				border-color: $color-light
+				background-color: $color-darken
+	figure
+		width: 250px
+		overflow: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+		outline: 2px solid #fff
+		outline-offset: -14px
+		img
+			width: 100%
 /*==========  user style  ==========*/
 
 /*==========  custom plugin ==========*/
@@ -763,5 +803,7 @@ footer
 	display: flex
 	width: auto
 /*==========  custom plugin  ==========*/
-
+.h-100
+	height: 100% !important
+	width: auto !important
 @import "media" // Always at the end
