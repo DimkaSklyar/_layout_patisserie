@@ -10849,6 +10849,7 @@ h2 {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .slider {
@@ -11694,38 +11695,6 @@ footer span {
   font-style: italic;
 }
 
-footer .fallow-social {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer .fallow-social li:not(:last-child) {
-  margin-right: 5px;
-}
-
-footer .fallow-social a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  font-size: 1.2em;
-  transition: .1s;
-}
-
-footer .fallow-social a:hover {
-  color: #ffb70f;
-  border-color: #ffb70f;
-}
-
-footer .fallow-social a i {
-  line-height: 38px;
-}
-
 footer .contacts {
   list-style: none;
   margin: 0;
@@ -11738,6 +11707,53 @@ footer .contacts a {
 
 footer .contacts a:hover {
   color: #ffb70f;
+}
+
+.fallow-social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fallow-social li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.fallow-social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: .1s;
+}
+
+.fallow-social a:hover {
+  color: #ffb70f;
+  border-color: #ffb70f;
+}
+
+.fallow-social a i {
+  line-height: 38px;
+}
+
+.fs-address a {
+  background-color: #724e3f;
+  width: 52px;
+  height: 52px;
+}
+
+.fs-address a:hover {
+  color: #ffffff;
+  background-color: #ffb70f;
+}
+
+.fs-address a i {
+  line-height: 50px;
 }
 
 .copyright {
@@ -11804,6 +11820,186 @@ footer .contacts a:hover {
 
 .modal-window figure img {
   width: 100%;
+}
+
+.header-z {
+  padding: 10px 0;
+  border-top: 2px solid #724e3f;
+  border-bottom: 2px solid #724e3f;
+}
+
+.header-z .section-wrp {
+  background: url("../img/about-page.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.header-z .section-wrp::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(114, 78, 63, 0.7);
+  background-image: url("../img/dots.png");
+}
+
+.header-z .page-h {
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.header-z .page-h h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+
+.q-slogan .big-quot {
+  font-size: 2em;
+  font-weight: 300;
+  padding-left: 35px;
+  position: relative;
+}
+
+.q-slogan .big-quot::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 200px;
+  background-color: #724e3f;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-k {
+  padding-top: 0;
+}
+
+.about-story {
+  padding: 40px;
+}
+
+.about-story .about-decor {
+  background: url("../img/about-section-coffee.png") no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  margin: auto -20px;
+}
+
+.about-story h2 {
+  font-size: 1.5em;
+}
+
+.presentation {
+  background: url("../img/section-pres.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+.presentation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.presentation-content {
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+
+.presentation-content h2 {
+  font-size: 3em;
+  color: #724e3f;
+}
+
+.p-2 {
+  padding-top: 120px;
+}
+
+.header-z .bcg-menu {
+  background: url("../img/menu.jpg") no-repeat 60% 35%;
+  background-size: cover;
+}
+
+.contact-info-wrp {
+  border: 2px solid #724e3f;
+  padding: 25px;
+}
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback input {
+  width: 65%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  padding: 0px 10px;
+}
+
+.feedback input:focus {
+  border: 2px solid #724e3f;
+  outline: none 0;
+}
+
+.feedback textarea {
+  width: 100%;
+  border: 2px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.feedback textarea:focus {
+  border: 2px solid #724e3f;
+  outline: none 0;
+}
+
+.feedback label {
+  margin-left: 10px;
+}
+
+.feedback #messegeResult-contact-form {
+  text-align: right;
+}
+
+.feedback .btn-feedback {
+  background-color: #724e3f;
+  color: #ffffff;
+}
+
+.feedback .btn-feedback:hover {
+  cursor: pointer;
+  background-color: #ffb70f;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address h3 {
+  text-transform: uppercase;
+}
+
+.address h3:last-of-type {
+  margin-top: 25px;
+}
+
+.address ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*==========  user style  ==========*/
