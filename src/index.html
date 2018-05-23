@@ -187,13 +187,16 @@
 						<h1>Dialog example</h1>
 						<p>Категория: <span id="cat"></span></p>
 						<p>Цена: <span id="prc"></span></p>
-						<form action="" method="post" id="form-order">
+						<form action="" method="POST" id="form-order"name="order-name">
+							<input type="text" value="" id="input-n-product" name="input-n-product"hidden>
+							<input type="text" value="" id="input-cat-product" name="input-cat-product" hidden>
+							<input type="text" value="" id="input-price-product" name="input-price-product"hidden>
 							<input type="text" name="order-name" id="order-name" placeholder="Имя" required>
-							<input type="tel" name="order-tel" id="order-tel" placeholder="Телефон" required>
-							<div id="messegeResult-order">
-								<button id="submit-form-subscribe" type="submit" form="form-order" class="btn btn-darken">Заказать</button>
-							</div>
+							<input type="text" name="order-tel" id="order-tel" placeholder="Телефон" required>
 						</form>
+						<div id="messegeResult-order">
+							<button id="submit-form-subscribe" type="submit" form="form-order" class="btn btn-darken">Заказать</button>
+						</div>
 					</div>
 					<div class="col">
 						<figure><img src="" alt=""></figure>
@@ -425,7 +428,7 @@
 			</div>
 		</section>
 		
-		<section class="team" id="#bpovar">
+		<section class="team" id="bpovar">
 			<div class="container">
 				<div class="section-name">
 					<h2>Наши повора</h2>
@@ -551,8 +554,8 @@
 						<h2>Подписка</h2>
 						<p>Оставьте Вашу электронную почту для регулярных <br> оповещений о новых обновлениях.</p>
 						<form action="" method="post" id="subscribe">
-							<input type="email" name="subscribe-email" id="subscribe-email" placeholder="Введите Ваш e-mail">
-							<div id="messegeResult-subscribe">
+							<input type="email" name="subscribe-email" id="subscribe-email" placeholder="Введите Ваш e-mail" required>
+							<div id="messegeResult-sub">
 								<button id="submit-form-subscribe" type="submit" form="subscribe" class="btn btn-darken">Отправить</button>
 							</div>
 						</form>

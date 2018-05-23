@@ -273,7 +273,7 @@ html {
 
 html {
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -2868,7 +2868,7 @@ html {
   bottom: 0px;
   left: 0px;
   display: none;
-  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  background: linear-gradient(transparent, black);
   width: 100%;
 }
 
@@ -10390,7 +10390,7 @@ button::-moz-focus-inner {
   padding: 0;
   width: 90px;
   height: 110px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mfp-arrow:active {
@@ -11938,11 +11938,19 @@ footer .contacts a:hover {
   padding: 25px;
 }
 
-.feedback {
+.m-0 {
+  text-align: center !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+}
+
+.feedback-1 {
   margin-top: 20px;
 }
 
-.feedback input {
+.feedback-1 input {
   width: 65%;
   height: 40px;
   margin-bottom: 10px;
@@ -11950,36 +11958,36 @@ footer .contacts a:hover {
   padding: 0px 10px;
 }
 
-.feedback input:focus {
+.feedback-1 input:focus {
   border: 2px solid #724e3f;
   outline: none 0;
 }
 
-.feedback textarea {
+.feedback-1 textarea {
   width: 100%;
   border: 2px solid #ccc;
   margin-bottom: 5px;
 }
 
-.feedback textarea:focus {
+.feedback-1 textarea:focus {
   border: 2px solid #724e3f;
   outline: none 0;
 }
 
-.feedback label {
+.feedback-1 label {
   margin-left: 10px;
 }
 
-.feedback #messegeResult-contact-form {
+.feedback-1 #messegeResult-contact-form {
   text-align: right;
 }
 
-.feedback .btn-feedback {
+.feedback-1 .btn-feedback {
   background-color: #724e3f;
   color: #ffffff;
 }
 
-.feedback .btn-feedback:hover {
+.feedback-1 .btn-feedback:hover {
   cursor: pointer;
   background-color: #ffb70f;
 }

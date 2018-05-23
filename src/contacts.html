@@ -22,7 +22,7 @@
 							<a href="index.html" class="logo">
 								<figure><img src="img/logo.png" alt=""></figure>
 							</a>
-							<li><a href="#bpovar">Повора</a></li>
+							<li><a href="about.html#bpovar">Повора</a></li>
 							<li><a href="payment.html">Оплата</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
@@ -53,13 +53,13 @@
 						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b74e2bcbcdf74ac0c676ec364272b0a8c6efa40732aef7feb156176d9566043&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
 					</div>
 					<div class="col-7">
-						<div class="feedback">
+						<div class="feedback-1">
 							<form action="" method="post" id="contact-form">
-								<input type="text" name="contact-name" id="contact-name">
+								<input type="text" name="contact-name" id="contact-name" required>
 								<label for="contact-name"><i class="fa fa-user" aria-hidden="true"></i> Имя</label>
-								<input type="email" name="contact-mail" id="contact-mail">
+								<input type="email" name="contact-mail" id="contact-mail" required>
 								<label for="contact-mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</label>
-								<textarea name="contact-message" id="contact-message" cols="30" rows="8"></textarea>
+								<textarea name="contact-message" id="contact-message" cols="30" rows="8" required></textarea>
 							</form>
 							<div id="messegeResult-contact-form">
 								<button id="submit-form-subscribe" type="submit" form="contact-form" class="btn btn-feedback"><i class="fa fa-envelope-o" aria-hidden="true"></i> Отправить</button>
@@ -104,8 +104,8 @@
 							<h2>Подписка</h2>
 							<p>Оставьте Вашу электронную почту для регулярных <br> оповещений о новых обновлениях.</p>
 							<form action="" method="post" id="subscribe">
-								<input type="email" name="subscribe-email" id="subscribe-email" placeholder="Введите Ваш e-mail">
-								<div id="messegeResult-subscribe">
+								<input type="email" name="subscribe-email" id="subscribe-email" placeholder="Введите Ваш e-mail" required>
+								<div id="messegeResult-sub">
 									<button id="submit-form-subscribe" type="submit" form="subscribe" class="btn btn-darken">Отправить</button>
 								</div>
 							</form>
